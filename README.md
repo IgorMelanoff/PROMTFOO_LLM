@@ -58,25 +58,36 @@ Copy code
 ## ⚙️ Installation
 
 ### 1. Clone the repo
-```bash
-git clone https://github.com/<your-username>/ai-llm-eval.git
-cd ai-llm-eval
+
+git clone https://github.com/IgorMelanoff/PROMTFOO_LLM.git
+cd downloads
 2. Install dependencies
-bash
-Copy code
+node -v
+brew -v
 brew install node python
+npm -v
 npm install
-python3 -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-3. Add your API key
-bash
-Copy code
-export OPENAI_API_KEY="sk-xxxx"
-4. Run evaluations
-bash
-Copy code
-promptfoo eval
-promptfoo view
+python3 --version
+
+3.
+//create env
+python3 -m venv .venv
+//activate env
+source .venv/bin/activate
+4.
+///create hidden file for API keys
+touch .env
+
+//Git ignore file create -> got folder
+touch .gitignore
+5. Install promtfoo - https://www.promptfoo.dev/docs/installation/
+brew install promptfoo
+promptfoo --version
+
+6.
+//run
+promptfoo init
+
 
 
 <img width="1457" height="1202" alt="image" src="https://github.com/user-attachments/assets/f1234a59-257b-4690-b376-b6f6ef25a9ed" />
